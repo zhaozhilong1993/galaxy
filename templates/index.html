@@ -1,5 +1,16 @@
-{% extends "base.html" %}
+{% extends "footer.html" %}
 {% block content %}
+
+<head>
+
+    <!--LOADING STYLESHEET FOR PAGE-->
+    <link type="text/css" rel="stylesheet" href="/static/vendors/intro.js/introjs.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/calendar/zabuto_calendar.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/sco.message/sco.message.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/intro.js/introjs.css">
+
+</head>
+
 
 <body class=" ">
 
@@ -26,7 +37,7 @@ Chat
                     <div class="chat-content">
                         <ul class="chat-box-body">
                             <li>
-                                <p><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" class="avt" /><span class="user">John Doe</span><span class="time">09:33</span>
+                                <p><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" class="avt" /><span class="user">{{ context.}}</span><span class="time">09:33</span>
                                 </p>
                                 <p>Hi Swlabs, we have some comments for you.</p>
                             </li>
@@ -48,12 +59,12 @@ Chat
                 <!--BEGIN TITLE & BREADCRUMB PAGE-->
                 <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
                     <div class="page-header pull-left">
-                        <div class="page-title">Dashboard</div>
+                        <div class="page-title">首页面板</div>
                     </div>
                     <ol class="breadcrumb page-breadcrumb pull-left">
                         <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                        <li class="hidden"><a href="#">Dashboard</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                        <li class="active">Dashboard</li>
+                        <li class="hidden"><a href="#">首页面板</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                        <li class="active">首页面板</li>
                     </ol>
                     <div class="btn btn-blue reportrange"><i class="fa fa-calendar"></i>&nbsp;<span></span>&nbsp;report&nbsp;<i class="fa fa-angle-down"></i>
                         <input type="hidden" name="datestart" />
@@ -205,7 +216,7 @@ Chat
                         <div class="user-info">
                             <div style="margin-bottom: 15px" class="row">
                                 <div class="col-xs-12 col-sm-8">
-                                    <h2>John Doe</h2>
+                                    <h2>{{ context.username }}</h2>
                                     <p><strong>About:</strong> Web Designer / UI.</p>
                                     <p><strong>Hobbies:</strong> Read, out with friends, listen to music, draw and learn new things.</p>
                                     <p><strong class="mrs">Skills:</strong><span class="label label-green mrs">html5</span><span class="label label-green mrs">css3</span><span class="label label-green mrs">jquery</span>
@@ -379,6 +390,45 @@ Report this user for spam</a>
     <!--END PAGE WRAPPER-->
     </div>
     </div>
+    <script src="/static/js/jquery-1.10.2.min.js"></script>
+    <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    <!--loading bootstrap js-->
+    <script src="/static/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <script src="/static/vendors/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/static/vendors/slimScroll/jquery.slimscroll.js"></script>
+    <script src="/static/vendors/jquery-cookie/jquery.cookie.js"></script>
+    <script src="/static/vendors/iCheck/icheck.min.js"></script>
+    <script src="/static/vendors/iCheck/custom.min.js"></script>
+    <script src="/static/vendors/jquery-notific8/jquery.notific8.min.js"></script>
+    <script src="/static/vendors/jquery-highcharts/highcharts.js"></script>
+    <script src="/static/js/jquery.menu.js"></script>
+    <script src="/static/vendors/jquery-pace/pace.min.js"></script>
+    <script src="/static/vendors/holder/holder.js"></script>
+    <script src="/static/vendors/responsive-tabs/responsive-tabs.js"></script>
+    <script src="/static/vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+    <script src="/static/vendors/moment/moment.js"></script>
+    <script src="/static/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/static/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!--CORE JAVASCRIPT-->
+    <script src="/static/js/main.js"></script>
+    <!--LOADING SCRIPTS FOR PAGE-->
+    <script src="/static/vendors/intro.js/intro.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.categories.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.pie.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.tooltip.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.resize.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.fillbetween.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.stack.js"></script>
+    <script src="/static/vendors/flot-chart/jquery.flot.spline.js"></script>
+    <script src="/static/vendors/calendar/zabuto_calendar.min.js"></script>
+    <script src="/static/vendors/sco.message/sco.message.js"></script>
+    <script src="/static/vendors/intro.js/intro.js"></script>
+    <script src="/static/js/index.js"></script>
 
 
 </body>

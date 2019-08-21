@@ -1,0 +1,120 @@
+{% extends "footer.html" %}
+{% block content %}
+
+
+<head>
+
+    <!--LOADING STYLESHEET FOR PAGE-->
+    <link type="text/css" rel="stylesheet" href="/static/vendors/bootstrap-markdown/css/bootstrap-markdown.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/summernote/summernote.css">
+    <!--Loading style vendors-->
+    <link type="text/css" rel="stylesheet" href="/static/vendors/animate.css/animate.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/jquery-pace/pace.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/iCheck/skins/all.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/jquery-notific8/jquery.notific8.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/vendors/bootstrap-daterangepicker/daterangepicker-bs3.css">
+</head>
+
+<body class=" ">
+    <div>
+
+        <div id="wrapper">
+
+            <!--BEGIN PAGE WRAPPER-->
+            <div id="page-wrapper">
+                <!--BEGIN TITLE & BREADCRUMB PAGE-->
+                <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                    <div class="page-header pull-left">
+                        <div class="page-title">编写笔记</div>
+                    </div>
+                    <ol class="breadcrumb page-breadcrumb">
+                        <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                        <li><a href="#">学习笔记</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                        <li class="active">编写笔记</li>
+                    </ol>
+                    <div class="btn btn-blue reportrange hide"><i class="fa fa-calendar"></i>&nbsp;<span></span>&nbsp;report&nbsp;<i class="fa fa-angle-down"></i>
+                        <input type="hidden" name="datestart" />
+                        <input type="hidden" name="endstart" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--END TITLE & BREADCRUMB PAGE-->
+                <!--BEGIN CONTENT-->
+                <div class="page-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="panel panel-white">
+                                <div class="panel-body pan">
+                                    <form action="#" class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Default</label>
+                                                <div class="col-md-9">
+                                                    <textarea rows="30" class="wysihtml5 form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--END CONTENT-->
+            </div>
+
+            <!--END PAGE WRAPPER-->
+        </div>
+    </div>
+    <script src="/static/js/jquery-1.10.2.min.js"></script>
+    <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    <!--loading bootstrap js-->
+    <script src="/static/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <script src="/static/vendors/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/static/vendors/slimScroll/jquery.slimscroll.js"></script>
+    <script src="/static/vendors/jquery-cookie/jquery.cookie.js"></script>
+    <script src="/static/vendors/iCheck/icheck.min.js"></script>
+    <script src="/static/vendors/iCheck/custom.min.js"></script>
+    <script src="/static/vendors/jquery-notific8/jquery.notific8.min.js"></script>
+    <script src="/static/vendors/jquery-highcharts/highcharts.js"></script>
+    <script src="/static/js/jquery.menu.js"></script>
+    <script src="/static/vendors/jquery-pace/pace.min.js"></script>
+    <script src="/static/vendors/holder/holder.js"></script>
+    <script src="/static/vendors/responsive-tabs/responsive-tabs.js"></script>
+    <script src="/static/vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+    <script src="/static/vendors/moment/moment.js"></script>
+    <script src="/static/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/static/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!--CORE JAVASCRIPT-->
+    <script src="/static/js/main.js"></script>
+    <!--LOADING SCRIPTS FOR PAGE-->
+    <script src="/static/vendors/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+    <script src="/static/vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script src="/static/vendors/ckeditor/ckeditor.js"></script>
+    <script src="/static/vendors/summernote/summernote.js"></script>
+    <script src="/static/js/ui-editors.js"></script>
+    <script type="text/javascript">
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-145464-14', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+{% endblock %}

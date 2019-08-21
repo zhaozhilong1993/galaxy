@@ -4,88 +4,88 @@
 
 <body id="signup-page">
     <div class="page-form">
-        <form id="signup-form" action="index.html" class="form">
+        <form id="signup-form" action="/signup/registerzc/" method="post" class="form">
             <div class="header-content">
-                <h1>Register</h1>
+                <h1>注册</h1>
             </div>
             <div class="body-content">
                 <div class="form-group">
                     <div class="input-icon right"><i class="fa fa-user"></i>
-                        <input type="text" placeholder="Username" name="username" class="form-control">
+                        <input type="text" placeholder="用户名" name="username" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-icon right"><i class="fa fa-envelope"></i>
-                        <input type="email" placeholder="Email address" name="email" class="form-control">
+                        <input type="email" placeholder="邮箱" name="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon right"><i class="fa fa-phone"></i>
+                        <input type="phone" placeholder="手机号" name="phone" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-icon right"><i class="fa fa-key"></i>
-                        <input id="password" type="password" placeholder="Password" name="password" class="form-control">
+                        <input id="password" type="password" placeholder="密码" name="password" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-icon right"><i class="fa fa-key"></i>
-                        <input type="password" placeholder="Confirm Password" name="passwordConfirm" class="form-control">
+                        <input type="password" placeholder="重复密码" name="passwordConfirm" class="form-control">
                     </div>
                 </div>
                 <hr>
                 <div style="margin-bottom: 15px" class="row">
                     <div class="col-lg-6">
                         <label>
-                            <input type="text" placeholder="First Name" name="firstname" class="form-control">
+                            <input type="text" placeholder="姓" name="firstname" class="form-control">
                         </label>
                     </div>
                     <div class="col-lg-6">
                         <label>
-                            <input type="text" placeholder="Last Name" name="lastname" class="form-control">
+                            <input type="text" placeholder="名" name="lastname" class="form-control">
                         </label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label style="display: block" class="select">
                         <select name="gender" class="form-control">
-                            <option value="0" selected disabled>Gender</option>
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
-                            <option value="3">Other</option>
+                            <option value="0" selected disabled>性别</option>
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+
                         </select>
                     </label>
                 </div>
+
                 <div class="form-group">
                     <div class="checkbox-list">
                         <label>
-                            <input id="subscription" type="checkbox" name="subscription">&nbsp; I want to receive news and special offers</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="checkbox-list">
-                        <label>
-                            <input id="terms" type="checkbox" name="terms">&nbsp; I agree with the Terms and Conditions</label>
+                            <input id="terms" type="checkbox" name="terms">&nbsp; 我同意平台的注册条款</label>
                     </div>
                 </div>
                 <hr>
-                <div class="form-group mbn"><a href="extra-signin.html" class="btn btn-warning"><i class="fa fa-chevron-circle-left"></i>&nbsp;
-Back</a>
-                    <button type="submit" class="btn btn-info pull-right">Submit &nbsp;
+                <div class="form-group mbn"><a href="/signin" class="btn btn-warning"><i class="fa fa-chevron-circle-left"></i>&nbsp;
+返回</a>
+                    <button type="submit" class="btn btn-info pull-right">提交 &nbsp;
                         <i class="fa fa-chevron-circle-right"></i>
                     </button>
                 </div>
             </div>
         </form>
     </div>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
+    <script src="/static/js/jquery-1.10.2.min.js"></script>
+    <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
     <!--loading bootstrap js-->
-    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
-    <script src="vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <script src="js/extra-signup.js"></script>
-    <script src="vendors/iCheck/icheck.min.js"></script>
-    <script src="vendors/iCheck/custom.min.js"></script>
+    <script src="/static/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="/static/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <script src="/static/js/extra-signup.js"></script>
+    <script src="/static/vendors/iCheck/icheck.min.js"></script>
+    <script src="/static/vendors/iCheck/custom.min.js"></script>
     <script>
         //BEGIN CHECKBOX & RADIO
         $('input[type="checkbox"]').iCheck({
